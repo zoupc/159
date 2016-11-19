@@ -1,0 +1,27 @@
+/**
+ * 声音元件
+ * -u-audio
+ */
+.u-audio { position: absolute; top: 15px; right: 56px; width:50px; height: 30px; z-index: 200; }
+.u-audio .res_audio { position: absolute; top: 0; left: 0; opacity: 0; height: 0; width: 0; }
+.u-audio .btn_audio { width: 100%;padding-left:20px; height: 30px; }
+.u-audio .btn_audio strong,
+.u-audio .btn_audio .audio_open { display: inline-block; height: 30px; line-height: 30px; vertical-align: middle; }
+.u-audio .btn_audio strong { width: 50px; font-size: 120%; color: #FFFFFF; opacity: 1; }
+.u-audio .btn_audio .audio_open { position: absolute; bottom: 0; left: 56px; width: 30px; }
+.u-audio .btn_audio strong.z-hide { opacity: 0; }
+.u-audio .btn_audio strong.z-move { 
+	-webkit-transition:opacity 0.5s;
+  	   -moz-transition:opacity 0.5s;
+	    -ms-transition:opacity 0.5s;
+	     -o-transition:opacity 0.5s;
+	        transition:opacity 0.5s;
+}
+.u-audio.z-low { z-index: 1; }
+/*sprite图片合并*/
+.css_sprite01 { background-image:url(../images/musicimg.png)!important;  background-repeat: no-repeat!important;} 
+.asasa{-webkit-animation:rotate22 linear 2s infinite;}
+@-webkit-keyframes rotate22{from{-webkit-transform: rotate(0deg)}
+to{-webkit-transform: rotate(360deg)}
+}
+.f-hide { display: none!important; }
