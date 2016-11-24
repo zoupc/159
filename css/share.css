@@ -2,7 +2,7 @@
 *{margin:0; padding:0; border:0;}
 ul,li{ list-style:none;}
 img{border:0;}
-html,body{ width:100%; height:100%; overflow:hidden; font:12px "Microsoft Yahei", Arial, Helvetica; color:#333333;}
+html,body{ width:100%; height:100%; overflow:hidden; font:12px "Microsoft Yahei", Arial, Helvetica; color:#333333;max-width: 480px;margin: 0 auto;}
 a{ color:#000000; text-decoration:none;}
 a:focus{
 	outline:none
