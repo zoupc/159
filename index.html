@@ -18,6 +18,15 @@
 		<link href="css/nohengping.css" rel="stylesheet" type="text/css">
 		<link rel="stylesheet" href="css/style.css">
 		<style type="text/css">
+			*{   
+			    -webkit-touch-callout:none;  /*系统默认菜单被禁用*/   
+			    -webkit-user-select:none; /*webkit浏览器*/   
+			    -khtml-user-select:none; /*早期浏览器*/   
+			    -moz-user-select:none;/*火狐*/   
+			    -ms-user-select:none; /*IE10*/   
+			    user-select:none;   
+			}
+
 			.btn-list table tbody tr td a{
 				width: 68px;
 			    height: 68px;
@@ -71,7 +80,7 @@
 		</script>
 	</head>
 
-	<body>
+	<body oncontextmenu=self.event.returnValue=false onselectstart="return false">
 		<script>
 			$(document).ready(function() {
 				getweichat("wxd7b18ef75e609314", 1479957120, "yimf0u81ufk78p2j", "7faf634cc7fca6493395dcc022c712342cecd5b6", "但求天下无疾苦！", "159素食全餐！                          食之以素，善之于心！            点击进入微官网了解详情！", "http://pic.jumaquan.com:4869/b8458fd8a26cafeb879991376ab5d43d?x=40&y=49&w=538&h=538");
