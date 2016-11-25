@@ -14,97 +14,88 @@
 		<meta name="apple-mobile-web-app-status-bar-style" content="black">
 		<meta name="keywords" content="159素食全餐">
 		<meta name="description" content="159素食全餐">
-		<link href="css/music.css" rel="stylesheet" type="text/css">
-		<link href="css/nohengping.css" rel="stylesheet" type="text/css">
+		<!--<link href="css/music.css" rel="stylesheet" type="text/css">
+		<link href="css/nohengping.css" rel="stylesheet" type="text/css">-->
 		<link rel="stylesheet" href="css/style.css">
+		<script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/swiper.min.css"/>
 		<style type="text/css">
-			*{   
-			    -webkit-touch-callout:none;  /*系统默认菜单被禁用*/   
-			    -webkit-user-select:none; /*webkit浏览器*/   
-			    -khtml-user-select:none; /*早期浏览器*/   
-			    -moz-user-select:none;/*火狐*/   
-			    -ms-user-select:none; /*IE10*/   
-			    user-select:none;
+			.swiper-slide {
+				position: relative;
+				line-height: 300px;
+				color: #fff;
+				font-size: 36px;
+				text-align: center;
 			}
-
-			.btn-list table tbody tr td a{
-				width: 68px;
-			    height: 68px;
-			    padding: 4px;
-			    text-align: center;
-			    font-size: 2em;
-			    font-weight: bold;
-			    color: #F9DC50;
-			    background-color: #81C793;
-			    border: 2px #F9EAB3 solid;
+			.swiper-container-horizontal>.swiper-pagination .swiper-pagination-bullet{
+				background: #F9EAB3;
+				opacity:.8;
+				margin: 0 5px 0 0;
 			}
-			.weui-mask {
-			    position: fixed;
-			    z-index: 1000;
-			    top: 0;
-			    right: 0;
-			    left: 0;
-			    bottom: 0;
-			    background: rgba(0, 0, 0, 0.6);
+			.swiper-container-horizontal>.swiper-pagination .swiper-pagination-bullet-active{
+				background: #81C793;
+				opacity:1;
 			}
-			.weui-dialog {
-			    position: fixed;
-			    z-index: 5000;
-			    width: 80%;
-			    max-width: 300px;
-			    top: 50%;
-			    left: 50%;
-			    -webkit-transform: translate(-50%, -50%);
-			    transform: translate(-50%, -50%);
-			    background-color: #FFFFFF;
-			    text-align: center;
-			    border-radius: 3px;
-			    overflow: hidden;
-			}
-			.weui-dialog__hd {
-			    text-align: left;
-			}
-			.qrcode-lxrx, .qrcode-zdl{
-				width: 100%;
+			.swiper-pagination{
+				text-align: right;
 			}
 		</style>
-		<script type="text/javascript" src="js/jweixin-1.0.0.js"></script>
-		<script type="text/javascript" src="js/weichatshare.js"></script>
-		<script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
-		<script type="text/javascript" src="js/browser.js"></script>
-		<script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
-		<script type="text/javascript">
-			$(document).ready(function() {
-				adWindow();
-			});
-		</script>
 	</head>
 
 	<body oncontextmenu=self.event.returnValue=false onselectstart="return false">
-		<script>
+		<!--<script>
 			$(document).ready(function() {
 				getweichat("wxd7b18ef75e609314", 1479957120, "yimf0u81ufk78p2j", "7faf634cc7fca6493395dcc022c712342cecd5b6", "但求天下无疾苦！", "159素食全餐！                          食之以素，善之于心！            点击进入微官网了解详情！", "http://pic.jumaquan.com:4869/b8458fd8a26cafeb879991376ab5d43d?x=40&y=49&w=538&h=538");
 			});
-		</script>
+		</script>-->
 		<!--<div class="topnav">
 			<a href="index.html"><img src="img/Home@2x.png" class="navhome"></a>
 			<a href="javascript:history.go(-1);"><img src="img/back@2x.png" class="navback"></a>
 		</div>-->
 
-		<section id="content">
+		<div id="content">
 			<!--[music.jas]-->
+			<!--slider-->
+				
 			<div class="content-center">
-				<!--slider-->
-				<div class="banner">
+				<!-- swiper-slider -->
+				<div class="swiper-container">
+				  <div class="swiper-wrapper">
+				    <div class="swiper-slide" onclick="window.open('http://v.qq.com/x/page/m0326j0c2xn.html?')">
+				    	<img class="slider-img" src="img/slider/slider1.jpg" alt="">
+				    	<span class="pic-name">159素食全餐广告片</span>
+				    </div>
+				    <div class="swiper-slide"  onclick="window.open('http://v.qq.com/x/page/o0196fdrlxl.html')">
+				    	<img class="slider-img" src="img/slider/slider2.jpg" alt="">
+						<span class="pic-name">CCTV央视主持人水均益对话韩丹先生</span>
+				    </div>
+				    <div class="swiper-slide" onclick="window.open('http://v.qq.com/x/page/o0327nym3z0.html')">
+				    	<img class="slider-img" src="img/slider/slider3.jpg" alt="">
+						<span class="pic-name">佐丹力159素食全餐研发人韩丹个人介绍</span>
+				    </div>
+				    
+				    <div class="swiper-slide" onclick="window.open('http://v.qq.com/x/page/i0307h9stsr.html')">
+					    <img class="slider-img" src="img/slider/slider4.jpg" alt="">
+						<span class="pic-name">2016世界健康产业大会-韩丹董事长分享</span>
+				    </div>
+				    
+				    <div class="swiper-slide" onclick="window.open('http://v.qq.com/x/page/s0181til1of.html')">
+					    <img class="slider-img" src="img/slider/slider5.jpg" alt="">
+						<span class="pic-name">长春电视台走进佐丹力</span>
+				    </div>
+				  </div>
+				  <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets"></div>
+				</div>
+				<!-- /swiper-slider -->
+				<!--<div class="banner">
 					<div class="block_home_slider">
 						<div id="home_slider" class="flexslider">
 
-							<div class="flex-viewport" style="overflow: hidden; position: relative;">
 								<ul class="slides">
 									<li>
 										<div class="slide">
 											<a href="http://v.qq.com/x/page/m0326j0c2xn.html?ref_vid=o0327nym3z0">
-												<img src="img/436c83b22e737fcbc0e79437bb302397" alt="">
+												<img src="img/slider/slider1.jpg" alt="">
 												<span class="pic-name">159素食全餐广告片</span>
 												<i class="gray-bg"></i>
 											</a>
@@ -113,7 +104,7 @@
 									<li>
 										<div class="slide">
 											<a href="http://v.qq.com/x/page/o0196fdrlxl.html">
-												<img src="img/58f54fff39243d37ecace14f06b8fdd5" alt="">
+												<img src="img/slider/slider2.jpg" alt="">
 												<span class="pic-name">CCTV央视主持人水均益对话韩丹先生</span>
 												<i class="gray-bg"></i>
 											</a>
@@ -122,7 +113,7 @@
 									<li>
 										<div class="slide">
 											<a href="http://v.qq.com/x/page/o0327nym3z0.html">
-												<img src="img/727559de433a3ee891a61b2ed8737c08" alt="">
+												<img src="img/slider/slider3.jpg" alt="">
 												<span class="pic-name">佐丹力159素食全餐研发人韩丹个人介绍</span>
 												<i class="gray-bg"></i>
 											</a>
@@ -131,7 +122,7 @@
 									<li>
 										<div class="slide">
 											<a href="http://v.qq.com/x/page/i0307h9stsr.html">
-												<img src="img/d33979e74ee7f8762055311410f84a3d" alt="">
+												<img src="img/slider/slider4.jpg" alt="">
 												<span class="pic-name">2016世界健康产业大会-韩丹董事长分享</span>
 												<i class="gray-bg"></i>
 											</a>
@@ -140,23 +131,13 @@
 									<li>
 										<div class="slide">
 											<a href="http://v.qq.com/x/page/s0181til1of.html">
-												<img src="img/0b48c9a92dcd2f649be8e27c7a60913c" alt="">
+												<img src="img/slider/slider5.jpg" alt="">
 												<span class="pic-name">长春电视台走进佐丹力</span>
 												<i class="gray-bg"></i>
 											</a>
 										</div>
 									</li>
 								</ul>
-							</div>
-							
-							<ul class="flex-direction-nav">
-								<li>
-									<a class="flex-prev" href="#">Previous</a>
-								</li>
-								<li>
-									<a class="flex-next" href="#">Next</a>
-								</li>
-							</ul>
 						</div>
 						<script type="text/javascript">
 							$(function() {
@@ -171,7 +152,7 @@
 							});
 						</script>
 					</div>
-				</div>
+				</div>-->
 				<!--/slider-->
 				<div class="logo-center">
 
@@ -261,6 +242,8 @@
 						</li>
 					</ul>
 				</div>
+				<div class="line contact"><img src="img/line.png"><div style="height:100%;[TYPE_AD_IMAGE]"><img src="img/contact.jpg"></div></div>
+				<!--<div class="logo-center">
 				
 				<div id="box_ads">
 					<div class="list">
@@ -268,18 +251,18 @@
 							<li>
 								<a class="contact">
 									<!--<div style="height:100%;display:none;">人体的神医——自愈力</div>-->
-									<div class="logo-center">
-										<div class="line"><img src="img/line.png"><div style="height:100%;[TYPE_AD_IMAGE]"><img src="img/contact.jpg"></div></div>
+									
+										
 									</div>
 								</a>
 							</li>
 						</ul>
 					</div>
-				</div>
+				</div>-->
 				
 				
 			</div>
-		</section>
+		</div>
 		<div class="js_dialog" id="androidDialog1" style="opacity: 0;display: none;">
             <div class="weui-mask"></div>
             <div class="weui-dialog weui-skin_android">
@@ -292,7 +275,7 @@
 		<!--[menu]-->
 		<!--弹框开始-->
 		<link rel="stylesheet" type="text/css" href="css/share.css">
-		<script type="text/javascript">
+		<!--<script type="text/javascript">
 			var w, h, className;
 
 			function getSrceenWH() {
@@ -335,9 +318,9 @@
 				</div>
 			</div>
 		</div>
-		<script src="js/share.js"></script>
+		<script src="js/share.js"></script>-->
 		<!--弹框结束-->
-		<style type="text/css">
+		<!--<style type="text/css">
 			.prompt1 {
 				display: none;
 				width: 100%;
@@ -367,10 +350,10 @@
 				}
 				closepromptWindow();
 			}
-		</script>
+		</script>-->
 
 		<!--分享提示黑色透明层开始-->
-		<div class="point">
+		<!--<div class="point">
 			<div class="prompt1" id="centerpt">
 				<div style="width:75%; height:85%; margin:15px auto 0px auto;"><img src="img/prompt.png" width="100%" height="100%" border="0"></div>
 			</div>
@@ -378,30 +361,47 @@
 			<div class="prompt1" id="centerpt2">
 				<div style="width:70%; height:85%; margin:35px auto 0px auto;"><img src="img/prompt-ad.png" width="100%" height="100%" border="0"></div>
 			</div>
-		</div>
+		</div>-->
 		<!-- case js-->
+		<script type="text/javascript" src="js/jweixin-1.0.0.js"></script>
+		<script type="text/javascript" src="js/weichatshare.js"></script>
+		<!--<script type="text/javascript" src="js/browser.js"></script>-->
+		<script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
+		<!--<script type="text/javascript">
+			$(document).ready(function() {
+				//adWindow();
+			});
+		</script>-->
 		<script>
 			$(document).ready(function() {
 				var ddd = $(".btn-list table tr");
 				//for(i = 0; i < ddd.length; i++) {
-					var kkk = $(".btn-list table tr").eq(0).find("td").length;
-					if(kkk == 1) {
+					//var kkk = $(".btn-list table tr").eq(0).find("td").length;
+					/*if(kkk == 1) {
 						$(".btn-list table tr td a img").eq(i).css("width", "100%");
 					} else if(kkk == 2) {
 						$(".btn-list table tr").eq(i).find("td").css("width", 100 / kkk + "%");
 						var jkj = $(".btn-list table tr").eq(i).find("td").width();
 						$(".btn-list table tr").eq(i).find("td").find("img").css("width", jkj);
 						$(".btn-list table tr").eq(i).find("td").find("img").css("height", jkj).css("float", "none");
-					} else {
-						$(".btn-list table tr").find("td").css("width", 100 / kkk + "%");
-						var picW = $(".btn-list table tr").find("td").width();
+					} else {*/
+						var cwidth = document.body.clientWidth;
+						var kkk = 4;
+						var td = $(".btn-list table tr td");
+						//td.css("width", 100 / kkk + "%");
+						var picW = td.width();
 						var padding = picW * 0.1;
 						var border = 2;//边界2倍
+						if(320 < cwidth && cwidth <= 480 ){
+							padding = picW * 0.15;
+						}
 						picW = picW - (padding + border) *2;
-						$(".btn-list table tr").find("td a").css({"width": picW + "px", "height": picW + "px", "padding" : padding + 'px'});
-						$(".btn-list table tr").find("td a.twofont").css("line-height" , picW + 'px');
-					}
+						td.children("a").css({"width": picW + "px", "height": picW + "px", "padding" : padding + 'px'});
+						td.children("a.twofont").css("line-height" , picW + 'px');
+					/*}*/
 				//}
+				
+				$(".flex-viewport").css("overflow","auto");
 				
 				$(".contact").click(function(){
 					$("#androidDialog1").css({"display":"block", "opacity":"1"});
@@ -426,10 +426,10 @@
 			var windowHeight;
 			var adli;
 			var adcontent;
-			var clientWidth = document.body.clientWidth;
+			//var clientWidth = document.body.clientWidth;
 			
-			clientWidth = clientWidth / 4;
-			$("#box_ads .list").css("height",clientWidth + 'px');
+			//clientWidth = clientWidth / 4;
+			//$("#box_ads .list").css("height",clientWidth + 'px');
 			function adWindow() {
 				windowHeight = $(window).height();
 				adli = $(".list li").length;
@@ -442,11 +442,11 @@
 					$("#content").css("height", dd);
 				} else {
 					$("#box_ads").css("display", "none");
-					$("#content").css("height", navwH);
+					//$("#content").css("height", navwH);
 				}
 			}
 
-			function autoScroll(obj, ul_bz) {
+			/*function autoScroll(obj, ul_bz) {
 				if($(obj).find(ul_bz).children().length > 1) {
 					$(obj).find(ul_bz).animate({
 						marginTop: "-25px"
@@ -458,9 +458,17 @@
 				}
 			}
 			setInterval('autoScroll("#box_ads", "#adcont")', 2200);
-			setInterval('autoScroll("#scroll", "#ul-box")', 3000);
+			setInterval('autoScroll("#scroll", "#ul-box")', 3000);*/
 		</script>
-
+		<script src="js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+		  var mySwiper = new Swiper('.swiper-container',{
+		  	pagination: '.swiper-pagination',
+        	paginationClickable: true,
+		    loop: true,
+			autoplay: 3000,
+		  });
+		</script>
 	</body>
 
 </html>
